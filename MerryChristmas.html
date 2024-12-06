@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Merry Christmas, Mom and Dad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        div { font-size: 5rem; text-align: center; }
+        .subtitle__begin {
+            text-align: center;
+            animation-name: fade-out;
+            animation-duration: 8s;
+            animation-fill-mode: forwards;
+        }
+        .subtitle__end {
+            text-align: center;
+            opacity: 0;
+            animation-name: fade-in-out;
+            animation-delay: 5s;
+            animation-duration: 8s;
+            animation-fill-mode: forwards;
+        }
+        .text {
+            text-align: center;
+            opacity: 0;
+            animation-name: fade-in;
+            animation-delay: 12s;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+        }
+
+        .mountains-of-christmas-regular {
+            font-family: "Mountains of Christmas", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .mountains-of-christmas-bold {
+            font-family: "Mountains of Christmas", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        @keyframes fade-out {
+            from {
+                opacity: 100%
+            }
+            to {
+                opacity: 0
+            }
+        }
+        @keyframes fade-in {
+            from {
+                opacity: 0
+            }
+            to {
+                opacity: 100%
+            }
+        }
+        @keyframes fade-in-out {
+            0% {
+                opacity: 0
+            }
+            50% {
+                opacity: 100%
+            }
+            100% {
+                opacity: 0
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="mountains-of-christmas-bold subtitle__begin">The best way to spread Christmas cheer...</div>
+        <div class="mountains-of-christmas-bold subtitle__end">... is singing loud for all to hear.</div>
+        <div class="mountains-of-christmas-regular text">Merry Christmas, Mom and Dad🎄!</div>
+        <div class="mountains-of-christmas-regular text">Love, Tyler</div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
