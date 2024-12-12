@@ -72,12 +72,17 @@
             }
         }
     </style>
+    <script>
+        function playVideo() {
+            document.getElementById("vid").play();
+        }
+    </script>
 </head>
-<body>
+<body onpageshow="playVideo()">
     <header>
     </header>
     <main>
-        <video width="250" height="250" autoplay>
+        <video width="1" height="1" id="vid">
             <source src="sound.mp4" type="video/mp4">
             Your browser does not support the browser tag.
         </video>
