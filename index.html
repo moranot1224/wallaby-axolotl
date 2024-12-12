@@ -11,22 +11,23 @@
         .subtitle__begin {
             text-align: center;
             animation-name: fade-out;
-            animation-duration: 8s;
+            animation-duration: 4s;
             animation-fill-mode: forwards;
         }
         .subtitle__end {
             text-align: center;
             opacity: 0;
             animation-name: fade-in-out;
-            animation-delay: 5s;
-            animation-duration: 8s;
+            animation-delay: 2s;
+            animation-duration: 4s;
             animation-fill-mode: forwards;
         }
         .text {
             text-align: center;
             opacity: 0;
+            visibility: hidden;
             animation-name: fade-in;
-            animation-delay: 12s;
+            animation-delay: 6s;
             animation-duration: 4s;
             animation-fill-mode: forwards;
         }
@@ -55,7 +56,8 @@
                 opacity: 0
             }
             to {
-                opacity: 100%
+                opacity: 100%;
+                visibility: visible;
             }
         }
         @keyframes fade-in-out {
@@ -75,9 +77,13 @@
     <header>
     </header>
     <main>
+        <video width="1" height="1" autoplay>
+            <source src="sound.mp4" type="video/mp4">
+            Your browser does not support the browser tag.
+        </video>
         <div class="mountains-of-christmas-bold subtitle__begin">The best way to spread Christmas cheer...</div>
         <div class="mountains-of-christmas-bold subtitle__end">... is singing loud for all to hear.</div>
-        <div class="mountains-of-christmas-regular text">Merry Christmas, Mom and Dad🎄!</div>
+        <div class="mountains-of-christmas-regular text">Merry Christmas, Mom and Dad 🎄</div>
         <div class="mountains-of-christmas-regular text">Love, Tyler</div>
     </main>
     <footer>
